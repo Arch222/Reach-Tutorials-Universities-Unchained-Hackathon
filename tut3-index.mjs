@@ -1,7 +1,7 @@
 import { loadStdlib } from '@reach-sh/stdlib';
 import * as backend from './build/index.main.mjs';
 //This function defines the rock,paper, scissors game that the user will use in the game. It specifies what happens betwween Bob and Alice(the names described before, and then records who won the game to determne the smart contracts.
-
+// Fun fact: You can actually determine who won the game through the modulo function!
 (async () => {
   const stdlib = await loadStdlib();
   const startingBalance = stdlib.parseCurrency(10);
